@@ -1,5 +1,42 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+	<Window class="container" layout="vertical" top="20dp">
+		<Require
+			src="components/formField"
+			id="firstName"
+			text="First Name"
+			maxLength="25"
+			accessibilityHint="Enter your first name."/>
+		<Require
+			src="components/formField"
+			id="lastName"
+			text="Last Name"
+			maxLength="25"
+			accessibilityHint="Enter your last name."/>
+		<Require
+			src="components/formField"
+			id="username"
+			text="Username"
+			maxLength="16"
+			accessibilityHint="Enter your username."/>
+		<Require
+			src="components/formField"
+			id="password"
+			text="Password"
+			maxLength="16"
+			passwordMask="true"
+			accessibilityHint="Enter your password."/>
+		<Require
+			src="components/formField"
+			id="confirmPassword"
+			text="Confirm Password"
+			maxLength="16"
+			passwordMask="true"
+			accessibilityHint="Confirm your password."
+			onReturn="register"/>
+		
+		<Button id="registerButton" accessibilityLabel="Click me to register." onClick="register">Create Account</Button>
+		<ActivityIndicator id="activityIndicator" message="Loading..."/>
+		<Notification id="successToast" platform="android" message="Account created successfully!" duration="Ti.UI.NOTIFICATION_DURATION_LONG" />
+		<Notification id="errorToast" platform="android" message="There was an error creating your account :( Please try again." duration="Ti.UI.NOTIFICATION_DURATION_LONG" />
 	</Window>
 </Alloy>

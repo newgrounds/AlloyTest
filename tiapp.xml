@@ -5,13 +5,13 @@
     <version>1.0</version>
     <publisher>adamgressen</publisher>
     <url>http://www.adamgressen.com</url>
-    <description/>
+    <description>undefined</description>
     <copyright>2018 by adamgressen</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>4d7c5343-3980-4533-9888-962dff1a9cd5</guid>
+    <guid>53f0a854-d142-44ab-9000-962dff1a9cd5</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <property name="run-on-main-thread" type="bool">true</property>
     <ios>
@@ -52,5 +52,5 @@
     <plugins>
         <plugin version="1.0">ti.alloy</plugin>
     </plugins>
-    <property name="appc-app-id" type="string">5ad92ccc719fd4065e23d109</property>
+    <property name="appc-app-id" type="string">5ad9d5f7719fd4065e23f774</property>
 </ti:app>

@@ -1,0 +1,6 @@
+<Alloy>
+	<Label id="label" color="black"/>
+	<TextField id="textField" color="black" autocapitalization="false" autocorrect="false" onChange="validate"/>
+	<Label id="error" color="red"/>
+	<View id="separator" height="2dp" backgroundColor="black"/>
+</Alloy>
